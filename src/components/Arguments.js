@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 
 class Arguments extends Component {
-  constructor(props){
-    super(props);
-  }
-
   render(){
 
     const onRenderClick = () => {

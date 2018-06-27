@@ -7,3 +7,12 @@ body {
 .hidden {
   display: none;
 }
+
+input{
+  width: 600px;
+  height: 20px;
+}
+label{
+  display: block;
+  margin-top: 10px;
+}

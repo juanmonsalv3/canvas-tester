@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Canvas extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderCanvas() {
     const canvas = this.refs.canvas
     const ctx = canvas.getContext("2d")
@@ -15,6 +11,7 @@ class Canvas extends Component {
     img.onload = () => {
       if(this.props.transform){
         const transform = this.props.transform.split(',');
+        console.log(...transform);
         ctx.setTransform(...transform);
       }
       ctx.drawImage(img, 0, 0, img.width, img.height);
